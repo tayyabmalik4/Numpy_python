@@ -56,3 +56,8 @@ lst2=[6,7,8,9,10]
 # d1=np.array([2,4,6,8,1,4,46,2])
 # ///////////////format----------------np.split(arraay,[first_array,2nd_art,all])
 # print(np.split(d1,[2,4]))
+
+
+# //////if we want to split or concatenate the in the time zone than we use datetime module in numpy
+a=np.array(['02-12-2001'])
+print(np.datetime64(a))

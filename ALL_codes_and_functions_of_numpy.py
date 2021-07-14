@@ -68,6 +68,7 @@ print(np.sqrt(arr2))
 print(np.std(arr1))
 print(np.exp(arr1))
 print(np.log(arr1))
+print(np.log2(arr1))
 print(np.log10(arr1))
 
 
@@ -106,16 +107,42 @@ print(np.split(d1,[2,4]))
 val=np.sin(180)
 val2=np.cos(180 * np.pi/180)
 val3=np.tan(180)
+val4=np.arcsin(0.453523)
+val5=np.arccos(0.211423)
+val6=np.arctan(0.86782367)
 x_sin=np.arange(0,3*np.pi,0.1)
 y_sin=np.sin(x_sin)
 y_cos=np.cos(x_sin)
 y_tan=np.tan(x_sin)
+y_arcsin=np.arcsin(x_sin)
+y_arccos=np.arccos(x_sin)
+y_arctan=np.arctan(x_sin)
 plt.plot(x_sin,y_sin)
 plt.show()
 plt.plot(x_sin,y_cos)
 plt.show()
 plt.plot(x_sin,y_tan)
 plt.show()
+plt.plot(x_sin,y_arcsin)
+plt.show()
+plt.plot(x_sin,y_arccos)
+plt.show()
+plt.plot(x_sin,y_arcsin)
+plt.show()
+print(np.degrees(x_sin))
+print(np.deg2rad(x_sin)) 
+print(np.radians(x_sin))
+base=[10,2,5,50]
+per=[3,10,23,6]
+hyp=np.hypot(base,per)
+r=np.array([0.23,0.9,1.56,1.5,9.99,1.1])
+print(np.ceil(r))
+print(np.floor(r))
+print(np.fix(r))
+print(np.trunc(r))
+print(np.round(r))
+print(np.rint(r))
+
 
 
 # *******************Random*******************
@@ -171,20 +198,53 @@ print(np.sort(arr1)[::-1])
 
 
 
+# ****************Linear Algebra*************
+ln=np.arange(1,10).reshape((3,3))
+ln1=np.arange(1,10).reshape((3,3))
+print("Rank of the matrix",np.linalg.matrix_rank(ln))
+print(np.trace(ln))
+print(np.linalg.det(ln))
+print(np.linalg.inv(ln))
+print(np.linalg.matrix_power(ln, 3))
+# -------------------y=mx+c using this formula
+coff=np.array([[1,2],[3,4]])
+cont=np.array([8,3])
+print("linear equation solution",np.linalg.solve(coff,cont))
+print(np.dot(ln,ln1))
+print(np.vdot(ln,ln1))
+print(np.inner(ln,ln1))
+print(np.outer(ln,1))
+print(np.outer(ln,[2,3]))
+print(np.linalg.norm(ln))
+print(np.linalg.norm(ln,'fro'))
+print(np.linalg.norm(ln,np.inf))
+print(np.linalg.norm(ln,-np.inf))
+print(np.linalg.cond(ln))
+print(np.linalg.cond(ln,'fro'))
+print(np.linalg.cond(ln,np.inf))
+print(np.linalg.cond(ln,-np.inf))
+print(np.multi_dot([ln,ln1]))
+dilonall=np.array([2,3,5,7])
+print(np.diag(dilonall))
+print(np.where(ln<4,ln,5*ln))
 
 
 
 
 
+# *************************numpy.mashgrid(variable_1,variable_2)
+# ///////mashgrid id the function of the numpy module which is shows the matplotlib grapph with different numbers to different colors
 
 
 
+# *****************numpy.histrogram(variable)**********************
+# //////this function is use to the count the frequancy(how many are present there) of the elements 
 
 
 
-
-
-
+# ***************numpy.pad(variable_name)*************************
+# //////thius function is use when we want to add some arguments as the first or last of the array
+# //////pad means to spaces
 
 
 

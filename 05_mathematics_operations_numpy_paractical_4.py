@@ -110,6 +110,12 @@ min=arr2.min()
 # ////if we want to find out the natural log than we use np.log(variable)
 # print(np.log(arr1))
 
+# ////if we want to find out the log base 2 than we use np.log2(varoable)
+# print(np.log2(arr1))
+
 
 # ////if we want to find out the log base 10 than we use np.log(variable)
 # print(np.log10(arr1))
+
+
+
