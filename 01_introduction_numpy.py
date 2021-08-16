@@ -1,6 +1,18 @@
 # //////numpy drives 2 words num and py num means numurical and py means python
+
+# -------NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. Wikipedia
+# -------Written in: Python, C
+# -------Developer(s): Community project
+# -------Original author(s): Travis Oliphant
+# -------Stable release: 1.20.3 / 10 May 2021; 2 months ago
+# -------Initial release: As Numeric, 1995; as NumPy, 2006
+# -------License: BSD
+
+
 # /////when we want to handle data in numarical form than we use numpy library of python
+
 # /////this is basically in the form of list
+
 # ////numpy definition------
 # (.)numpy is scientific computing library for python
 # (.)support large number of data in the form of multi-dimentional array and matrix
