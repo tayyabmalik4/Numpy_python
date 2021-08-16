@@ -8,7 +8,7 @@ import numpy as np
 
 ln=np.arange(1,10).reshape((3,3))
 ln1=np.arange(1,10).reshape((3,3))
-print(ln)
+print(ln) 
 
 # ///////if we want to check rank of the 2d array than we use np.linalg.matrix_rank(variable)
 # print("Rank of the matrix",np.linalg.matrix_rank(ln))
