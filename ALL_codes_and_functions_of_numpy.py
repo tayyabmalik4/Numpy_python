@@ -195,7 +195,7 @@ print(np.sort(arr1, axis=None))
 arr2=np.arange(1,10)
 print(np.sort(arr2)[::-1])
 print(np.sort(arr1)[::-1])
-print(argsort(arr))
+print(np.argsort(arr))
 arr1=arr[3,5].copy()
 
 
